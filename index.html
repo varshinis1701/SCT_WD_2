@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillCraft Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>STOPWATCH</h1>
+        <p class="subtitle">SkillCraft Technology</p>
+
+        <div class="stopwatch">
+            <div class="time" id="display">
+                00:00:00.00
+            </div>
+
+            <div class="buttons">
+                <button id="startBtn" class="start">Start</button>
+                <button id="pauseBtn" class="pause">Pause</button>
+                <button id="lapBtn" class="lap">Lap</button>
+                <button id="resetBtn" class="reset">Reset</button>
+            </div>
+        </div>
+
+        <div class="laps-container">
+            <h2>Lap Times</h2>
+            <ul id="lapsList">
+                <li class="empty">No laps recorded yet</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Designed by SkillCraft Technology</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

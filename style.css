@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+h1 {
+    font-size: 35px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #00d4ff;
+    font-size: 16px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.stopwatch {
+    margin-bottom: 35px;
+}
+
+.time {
+    font-size: clamp(32px, 8vw, 55px);
+    font-weight: bold;
+    font-family: monospace;
+    margin-bottom: 35px;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+    white-space: nowrap;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    padding: 12px 23px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.15);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.start {
+    background: #28a745;
+}
+
+.pause {
+    background: #ff9800;
+}
+
+.lap {
+    background: #007bff;
+}
+
+.reset {
+    background: #dc3545;
+}
+
+.laps-container {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.laps-container h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+
+#lapsList {
+    list-style: none;
+    max-height: 230px;
+    overflow-y: auto;
+}
+
+#lapsList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 15px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+#lapsList .empty {
+    justify-content: center;
+    color: #aaa;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    margin-top: 30px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    button {
+        padding: 11px 16px;
+        font-size: 13px;
+    }
+}
